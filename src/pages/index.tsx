@@ -5,31 +5,18 @@ import sunset from '/public/images/carroussel/sunset.png'
 import field_view from '/public/images/carroussel/field_view.png'
 import aerial_2 from '/public/images/carroussel/aerial_2.png'
 import sunset_2 from '/public/images/carroussel/sunset_2.png'
-import homeStyles from '../styles/pages/Home.module.scss'
+import public_nights from '/public/images/thumbnails/public_nights.png'
+import members_nights from '/public/images/thumbnails/members_nights.png'
+import astrophoto from '/public/images/thumbnails/astrophoto.png'
+import conferences from '/public/images/thumbnails/conferences.png'
 import Image from 'next/image'
 import HomeCta from '@/components/HomeCta'
 import Caroussel from '../components/Caroussel'
-import Autoplay from 'embla-carousel-autoplay'
+import homeStyles from '../styles/pages/Home.module.scss'
+import globalsStyles from '../styles/globals.module.scss'
+import ActivityCard from '../components/ActivityCard'
 
 export default function Home() {
-
-  // const [navbarActive, setNavbarActive] = useState(true)
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
-  //   return () => { window.removeEventListener('scroll', handleScroll) } //Cleanup on unmount
-  // }, [])
-
-  // const handleScroll = () => {
-  //   const navbar = document.getElementById('navbar')
-  //   if (window.scrollY > 0) {
-  //     setNavbarActive(false)
-  //   } else {
-  //     navbar?.classList.remove('navbar-active')
-  //     setNavbarActive(true)
-  //   }
-  // }
-
   const mapper = (source: any) => (
     <Image key={source} src={source} alt="" />
   );
@@ -59,8 +46,42 @@ export default function Home() {
           autoplay
         />
       </div>
-      <div className={`${homeStyles.contentContainer} ${homeStyles.activityContainer}`}>
-
+      <div className={homeStyles.contentContainer}>
+        <h2 className={globalsStyles.contentTitle}>Les activités des AAAOV</h2>
+        <div className={homeStyles.activitiesContainer}>
+          <ActivityCard
+            title="Soirée publiques"
+            shortDescription="Participez à nos soirées publiques !"
+            description="Les soirées publiques sont des soirées d'observation ouvertes à tous, organisées par les AAAOV. Elles sont l'occasion de découvrir l'astronomie et de partager sa passion avec d'autres amateurs."
+            image={public_nights}
+            buttonText="Calendrier des soirées publiques"
+            link="agenda"
+          />
+          <ActivityCard
+            title="Soirée adhérants"
+            shortDescription="L'astronomie vous passionne ?"
+            description="Les Astronomes Amateurs Aixois de l'Observatoire de Vauvenargues vous accueillent et vous accompagnent dans votre passion avec de la formation interne dans diverses activités liées à l'astronomie"
+            image={members_nights}
+            buttonText="Calendrier des soirées adhérants"
+            link="agenda"
+          />
+          <ActivityCard
+            title="Astrophotographie"
+            shortDescription="L'astrophotographie vous intéresse ?"
+            description="Dans un cadre propice, les AAAOV accueillent, forment et accompagnent les adhérents dans l'astrophotographie. Leurs travaux sont affichés dans la salle de projection ainsi que sur le site web."
+            image={astrophoto}
+            buttonText="Voir les photos"
+            link="galerie"
+          />
+          <ActivityCard
+            title="Conférences"
+            shortDescription="Venez assister à nos conférences !"
+            description="2023, reprise des conférences aux Arts et Métiers d'Aix en Provence. Uniquement sur réservation sur HelloAsso."
+            image={conferences}
+            buttonText="Calendrier des conférences"
+            link="agenda"
+          />
+        </div>
       </div>
     </div >
   )

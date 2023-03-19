@@ -1,34 +1,34 @@
 @import '../mixin.scss';
 
-.app{
+.app {
   height: 200vh;
 
-  .homeHeader{
+  .homeHeader {
     display: flex;
     height: 35vh;
     flex-direction: row;
     justify-content: space-between;
 
-    .headerIllustration{
+    .headerIllustration {
       margin-right: -5rem;
     }
   }
 
-  .titleContainer{
-    .title{
+  .titleContainer {
+    .title {
       font-size: 3.5rem;
       font-weight: 900;
       margin-bottom: 1rem;
     }
 
-    .subtitle{
+    .subtitle {
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 200;
       // margin-bottom: 2rem;
     }
   }
 
-  .ctaContainer{
+  .ctaContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,11 +36,25 @@
     margin-top: 10vh;
   }
 
-  .carrousselContainer{
+  .carrousselContainer {
     margin-top: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .contentContainer {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+
+    .activitiesContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
   }
 }
