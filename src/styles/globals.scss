@@ -19,3 +19,35 @@ body {
 h1 {
   font-weight: 600;
 }
+
+table.GeneratedTable {
+  width: 50%;
+  // background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: $white;
+  border-style: solid;
+  color: #000000;
+  color: $white;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+table.GeneratedTable td,
+table.GeneratedTable th {
+  border-width: 1px;
+  border-color: $white;
+  border-style: solid;
+  padding: 3px;
+  padding: 1rem;
+  text-align: center;
+}
+
+table.GeneratedTable thead {
+  background-color: $grey;
+}
+
+li {
+  list-style-position: inside;
+  list-style-type: circle;
+}
