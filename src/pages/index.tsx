@@ -8,7 +8,8 @@ import sunset_2 from '/public/images/carroussel/sunset_2.png'
 import homeStyles from '../styles/pages/Home.module.scss'
 import Image from 'next/image'
 import HomeCta from '@/components/HomeCta'
-import { ReactScrolling } from 'react-auto-glide';
+import Caroussel from '../components/Caroussel'
+import Autoplay from 'embla-carousel-autoplay'
 
 export default function Home() {
 
@@ -52,9 +53,15 @@ export default function Home() {
         <HomeCta label="Nous contacter" href='/contact' />
       </div>
       <div className={homeStyles.carrousselContainer}>
-        {/* <ReactScrolling mapper={mapper} list={[aerial, sunset, aerial_2, field_view, sunset_2]} width='300px' time={"20s"} delayBetweenScroll="0" /> */}
+        <Caroussel
+          images={[aerial, sunset, aerial_2, field_view, sunset_2]}
+          options={{ loop: true, speed: .01 }}
+          autoplay
+        />
       </div>
+      <div className={`${homeStyles.contentContainer} ${homeStyles.activityContainer}`}>
 
+      </div>
     </div >
   )
 }
