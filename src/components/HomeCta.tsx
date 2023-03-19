@@ -7,6 +7,6 @@ interface HomeCtaProps {
 
 export default function HomeCta({ label, href }: HomeCtaProps) {
   return (
-    <button className={ctaStyles.cta}>{label}</button>
+    <a className={ctaStyles.cta} href={href}>{label}</a>
   )
 }

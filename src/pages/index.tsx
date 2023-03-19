@@ -1,6 +1,5 @@
 import AAAOV_LOGO from '/public/images/AAAOV_logo.svg'
 import universe_illustration from '/public/images/universe_illustration.svg'
-import universe_illustration_footer from '/public/images/universe_illustration_footer.svg'
 import aerial from '/public/images/carroussel/aerial.png'
 import sunset from '/public/images/carroussel/sunset.png'
 import field_view from '/public/images/carroussel/field_view.png'
@@ -26,7 +25,7 @@ export default function Home() {
   return (
     <div className={homeStyles.app}>
       <div className={homeStyles.homeHeader}>
-        <Image alt='Logo des AAAOV' src={AAAOV_LOGO} />
+        <Image alt='Logo des AAAOV' src={AAAOV_LOGO} className={homeStyles.headerImage} />
         <Image alt='Etoiles et objets célestes' src={universe_illustration} className={homeStyles.headerIllustration} />
       </div>
       <div className={homeStyles.titleContainer}>

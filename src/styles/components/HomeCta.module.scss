@@ -1,6 +1,6 @@
 @import '../mixin.scss';
 
-.cta{
+.cta {
   background-color: rgba($white, .1);
   border: none;
   outline: none;
@@ -10,8 +10,10 @@
   color: $white;
   font-weight: 600;
   width: calc(100% / 8);
+  text-decoration: none;
+  text-align: center;
 
-  &:hover{
+  &:hover {
     background-color: rgba($white, .2);
   }
 }

@@ -9,6 +9,11 @@
     flex-direction: row;
     justify-content: space-between;
 
+    .headerImage {
+      max-height: 10vh;
+      margin-top: 7px;
+    }
+
     .headerIllustration {
       margin-right: -5rem;
     }
