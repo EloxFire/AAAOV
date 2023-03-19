@@ -16,6 +16,9 @@
     background-color: rgba($white, .1);
     padding: 15px 25px 15px 25px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     .navbarLink {
       text-decoration: none;

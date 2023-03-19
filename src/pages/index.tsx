@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import AAAOV_LOGO from '/public/images/AAAOV_logo.svg'
 
 export default function Home() {
+
   return (
     <div className="app">
       <Navbar logo={AAAOV_LOGO} links={[
@@ -12,6 +13,7 @@ export default function Home() {
         { label: 'Téléchargements', href: '/' },
         { label: 'Nous contacter', href: '/' }
       ]} />
+
     </div>
   )
 }

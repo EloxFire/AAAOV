@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import navbarStyles from '../styles/components/Navbar.module.scss'
 
 interface NavbarProps {
@@ -8,6 +8,24 @@ interface NavbarProps {
 }
 
 export default function Navbar({ logo, links }: NavbarProps) {
+
+  useEffect(() => {
+    const navbar = document.getElementById('navbar')
+  }, [])
+  window.addEventListener('scroll', () => {
+    if (navbar) {
+      console.log("true");
+
+      if (window.scrollY >= 0) {
+        navbar.style.display = 'none'
+      } else {
+        navbar.style.display = 'flex'
+      }
+    } else {
+      console.log("false");
+    }
+  })
+
   return (
     <nav id="navbar" className={navbarStyles.navbar}>
       <div className="navbar-logo-container">
@@ -23,7 +41,7 @@ export default function Navbar({ logo, links }: NavbarProps) {
           {
             links.map((link, index) => {
               return (
-                <a key={'navbar-link-${index}'} href={link.href} className={navbarStyles.navbarLink}>{link.label}</a>
+                <a key={`navbar-link-${index}`} href={link.href} className={navbarStyles.navbarLink}>{link.label}</a>
               )
             })
           }
