@@ -1,0 +1,17 @@
+@import '../mixin.scss';
+
+.cta{
+  background-color: rgba($white, .1);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: $white;
+  font-weight: 600;
+  width: calc(100% / 8);
+
+  &:hover{
+    background-color: rgba($white, .2);
+  }
+}

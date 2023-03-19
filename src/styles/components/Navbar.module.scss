@@ -1,12 +1,11 @@
 @import '../mixin';
 
 .navbar {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 12vh;
-  // background-color: $red;
+  position: fixed;
 
   .logo {
     max-height: 10vh;

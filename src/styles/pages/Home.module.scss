@@ -1,1 +1,46 @@
-@import './globals.scss';
+@import '../mixin.scss';
+
+.app{
+  height: 200vh;
+
+  .homeHeader{
+    display: flex;
+    height: 35vh;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .headerIllustration{
+      margin-right: -5rem;
+    }
+  }
+
+  .titleContainer{
+    .title{
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle{
+      font-size: 1.5rem;
+      font-weight: 300;
+      // margin-bottom: 2rem;
+    }
+  }
+
+  .ctaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+  }
+
+  .carrousselContainer{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
