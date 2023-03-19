@@ -1,5 +1,6 @@
 import AAAOV_LOGO from '/public/images/AAAOV_logo.svg'
 import universe_illustration from '/public/images/universe_illustration.svg'
+import universe_illustration_footer from '/public/images/universe_illustration_footer.svg'
 import aerial from '/public/images/carroussel/aerial.png'
 import sunset from '/public/images/carroussel/sunset.png'
 import field_view from '/public/images/carroussel/field_view.png'
@@ -15,6 +16,7 @@ import Caroussel from '../components/Caroussel'
 import homeStyles from '../styles/pages/Home.module.scss'
 import globalsStyles from '../styles/globals.module.scss'
 import ActivityCard from '../components/ActivityCard'
+import Footer from '../components/Footer'
 
 export default function Home() {
   const mapper = (source: any) => (
@@ -83,6 +85,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Footer />
     </div >
   )
 }

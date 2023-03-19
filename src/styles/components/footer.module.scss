@@ -1,0 +1,46 @@
+@import '../mixin';
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40vh;
+  margin-top: 15vh;
+
+  .footerLeft {
+    width: 50%;
+    // background-color: $green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5vh;
+
+    .footerImage {
+      height: 50%;
+      width: 40%;
+    }
+  }
+
+  .footerRight {
+    width: 50%;
+    // background-color: $red;
+    background-image: url('/images/universe_illustration_footer.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 5vh;
+    font-weight: 200;
+
+    .footerInfos {
+      margin-top: 2vh;
+    }
+
+    .link {
+      color: $white;
+    }
+  }
+}
