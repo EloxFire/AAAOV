@@ -1,0 +1,23 @@
+@import '../mixin';
+
+.file {
+  text-decoration: none;
+  color: $white;
+  border-radius: 1rem;
+  padding: 10px;
+  margin-right: 20px;
+
+  .fileIcon {
+    max-height: 10vh;
+    margin-bottom: 1vh;
+  }
+
+  .fileText {
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: rgba($white, .1);
+    text-decoration: underline;
+  }
+}

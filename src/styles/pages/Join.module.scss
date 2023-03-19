@@ -36,4 +36,11 @@
     text-decoration: underline;
   }
 
+  .linksDownloadContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
 }

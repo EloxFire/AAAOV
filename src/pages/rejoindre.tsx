@@ -3,6 +3,7 @@ import AAAOV_LOGO from '/public/images/AAAOV_logo.svg'
 import Navbar from '../components/Navbar'
 import joinStyles from '../styles/pages/Join.module.scss'
 import Footer from '../components/Footer'
+import File from '../components/File'
 
 export default function rejoindre() {
   return (
@@ -85,6 +86,11 @@ export default function rejoindre() {
         <div className={joinStyles.contentContainer}>
           <h2 className={joinStyles.contentHeader}>Liens utiles</h2>
           <p className={joinStyles.text}>Voici quelques liens utiles sur l&apos;association :</p>
+          <div className={joinStyles.linksDownloadContainer}>
+            <File name="Bullettin d'adhésion" url="http://www.astrosurf.com/aaaov/documents/Bulletin%20d'adh%C3%A9sion%20AAAOV.pdf" />
+            <File name="Status de l'association" url="http://www.astrosurf.com/aaaov/documents/1-Statuts%202018.pdf" />
+            <File name="Règlement intérieur" url="http://www.astrosurf.com/aaaov/documents/2-%20RI%202018-03.pdf" />
+          </div>
         </div>
       </div>
       <Footer />
