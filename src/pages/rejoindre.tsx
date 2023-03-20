@@ -10,7 +10,7 @@ export default function rejoindre() {
     <>
       <Navbar logo={AAAOV_LOGO} links={[
         { label: 'Devenir adhérant', href: '/rejoindre' },
-        { label: 'Qui sommes nous ?', href: '/' },
+        { label: 'Qui sommes nous ?', href: '/qui-sommes-nous' },
         { label: 'Agenda', href: '/' },
         { label: 'Boutique', href: '/' },
         { label: 'Téléchargements', href: '/' },

@@ -1,0 +1,47 @@
+@import '../mixin';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  height: auto;
+
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    color: $white;
+    line-height: 35px;
+  }
+
+  .contentContainer {
+    margin-top: 10vh;
+
+    .contentHeader {
+      font-weight: 600;
+      margin-bottom: 2vh;
+    }
+  }
+
+  .list {
+    padding-top: 2vh;
+  }
+
+  .link {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  .linksDownloadContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}

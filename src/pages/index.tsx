@@ -37,7 +37,6 @@ export default function Home() {
         <HomeCta label="Qui sommes nous ?" href='/qui-sommes-nous' />
         <HomeCta label="Agenda" href='/agenda' />
         <HomeCta label="Boutique" href='/boutique' />
-        <HomeCta label="Téléchargements" href='/telechargements' />
         <HomeCta label="Nous contacter" href='/contact' />
       </div>
       <div className={homeStyles.carrousselContainer}>
